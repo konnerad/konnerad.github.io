@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('Digital-7.eot');
+  src: url('Digital-7.eot?#iefix') format('embedded-opentype'),
+      url('Digital-7.woff2') format('woff2'),
+      url('Digital-7.woff') format('woff'),
+      url('Digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  display: block;
+}
+
+#countdown {
+  font-family: 'Digital-7';
+  font-size: 50px;
+  margin-top: 20%;
+  text-align: center;
+}
+
+#finalImage {
+  padding-top: 200px;
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  height: auto;
+  transition: opacity 0.5s ease; /* Transition effect for opacity changes */
+}
+
+.fade {
+  opacity: 0;
+}
+
+@media screen and (max-width: 500px){
+  #finalImage {
+    max-width: 400px;
+  }
+
+  #countdown {
+    margin-top: 50%;
+    text-align: center;
+  }  
+}
